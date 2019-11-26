@@ -1,0 +1,193 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: "Open Sans", sans-serif;
+	background-color: linear-gradient(to right,#fff,blue);
+}
+.nav {
+  height: 80px;
+  width: 100%;
+  background-color: transparent;
+   position: relative;
+
+}
+
+.nav > .nav-header {
+  display: inline;
+
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #2E3D49;
+  padding: 15px 450px 20px 30px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+	display: inline-block;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 20px 10px 20px 10px;
+  margin: 0px 0px 0px 27.32px;
+  text-decoration: none;
+  color: #525C65;
+  font-size: 14px;
+  cursor: pointer;
+}
+.nav > .nav-links > button{
+	width: 7.75rem;
+    box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
+    color: #fff;
+    background-color: #02B2E4;
+    margin: 10px 0px 0px 27.32px;
+    padding:0px 8px;
+    border:none;
+    font-size: 14px;
+    height: 2.5rem;
+    border-radius: 5px;
+    cursor: pointer; 
+}
+
+
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color:#fff;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #fff;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: 500px;
+    width: 250px;
+  }
+}
+.testimonials{
+	margin: 50px auto;
+	background-color: linear gradient 
+}
+.testimonials .container h1{
+	text-align: center;
+	color: #2E3D49;
+	margin: 0 0 48px;
+	z-index: 2;
+	font-weight: lighter;
+
+
+}
+.testimonials .container h2{
+	text-align: center;
+	color: #02B3E4;
+	margin: 100px 0 28px;
+	opacity: 0.5;
+	font-style: italic;
+
+}
+.testimonials p{
+	color:#02B3E4;
+	text-align: center;
+}
+.testimonials .row{
+	margin-top: 100px;
+	justify-content: center; 
+}
+.col-md-4{
+	margin: 40px auto;
+}
+.profile{
+	color: #525C65;
+	background-color: #FFFFFF;
+	margin: 0 10px 40px 10px;
+	width: 270px;
+	height: 21rem;	
+	border-radius: 5px;
+	box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
+}
+.profile:nth-child(1){
+	border-top: 6px solid red;
+}
+.profile:nth-child(2){
+	border-top: 6px solid blue;
+}
+.profile:nth-child(3){
+	border-top: 6px solid violet;
+}
+.profile:nth-child(4){
+	border-top: 6px solid green;
+}
+.profile img{
+	top: -40px;
+	margin: 0 108.5px;
+	position: relative;
+	left: calc(50%-60px);
+}
+.profile .user{
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+}
+.testimonials blockquote{
+	font-style: italic;
+	font-size: 14px;
+	margin: 10px 10px 10px 24px;
+}
+
+.testimonials h6{
+	margin-bottom: 1.5rem;
+	margin-top: 10px;
+}
+.testimonials .line {
+  width: 80px;
+  height: 0;
+  border: 0.5px solid #C4C4C4;
+  margin: 3px;
+  opacity: 0.5;
+  display:inline-block;
+}
+
