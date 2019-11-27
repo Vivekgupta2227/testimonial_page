@@ -105,12 +105,11 @@
   }
   .nav > #nav-check:checked ~ .nav-links {
     height: 500px;
-    width: 250px;
+    width: 300px;
   }
 }
 .testimonials{
-	margin: 50px auto;
-	background-color: linear gradient 
+	margin: 50px auto; 
 }
 .testimonials .container h1{
 	text-align: center;
@@ -144,22 +143,26 @@
 	color: #525C65;
 	background-color: #FFFFFF;
 	margin: 0 10px 40px 10px;
+	margin-top: 50px;
 	width: 270px;
 	height: 21rem;	
 	border-radius: 5px;
 	box-shadow: 8px 10px 20px 0px rgba(46,61,73,0.15);
 }
-.profile:nth-child(1){
+.profile:nth-child(5n){
 	border-top: 6px solid red;
 }
-.profile:nth-child(2){
+.profile:nth-child(5n+1){
 	border-top: 6px solid blue;
 }
-.profile:nth-child(3){
+.profile:nth-child(5n+2){
 	border-top: 6px solid violet;
 }
-.profile:nth-child(4){
+.profile:nth-child(5n+3){
 	border-top: 6px solid green;
+}
+.profile:nth-child(5n+4){
+	border-top: 6px solid yellow;
 }
 .profile img{
 	top: -40px;
